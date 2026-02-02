@@ -1,5 +1,7 @@
 # MultiDx Clinical AI - Multi-Disease Clinical AI Prediction System
 
+#Research/Thesis Project Notice: MultiDx is a research and thesis-driven clinical AI prototype intended for educational and investigational use. It is not a certified medical device and must not be used for real-world diagnosis or treatment decisions. Always consult licensed healthcare professionals.
+
 A comprehensive full-stack web application for predicting multiple medical conditions using machine learning. This system provides early risk assessment for **Ovarian Cancer**, **PCOS (Polycystic Ovary Syndrome)**, and **Hepatitis B**, helping healthcare professionals make informed decisions with explainable AI insights.
 
 ## Overview
@@ -878,18 +880,30 @@ For production, ensure your frontend domain is included in `ALLOWED_ORIGINS`.
 ## Supported Models
 
 ### Ovarian Cancer Model
+Provides interpretable risk stratification for ovarian cancer using routinely available biomarkers.  
+Produces a prediction with confidence and explainability views highlighting clinically relevant markers.  
+Designed to support early risk assessment and reporting via the web interface for research use.
+
 - **Features**: 12 biomarkers
 - **Model File**: `model.pkl`
 - **Endpoint**: `/predict` or `/predict/ovarian`
 - **XAI Support**: Full support for all XAI methods
 
 ### PCOS Model
+Predicts PCOS risk with high diagnostic performance on benchmark data using an ensemble approach.  
+Uses explainable AI outputs to connect predictions to clinically meaningful indicators (e.g., follicle count, cycle irregularity, weight gain).  
+Built to assist research-oriented decision support for earlier PCOS screening and evaluation.
+
 - **Features**: 20 clinical features
 - **Model File**: `pcos.pkl`
 - **Endpoint**: `/predict/pcos`
 - **XAI Support**: Full support for all XAI methods
 
 ### Hepatitis B Model
+Estimates Hepatitis B mortality risk with strong predictive performance on benchmark clinical datasets.  
+Addresses class imbalance and provides transparent, explainable results using SHAP/LIME-style insights.  
+Intended as a research-grade prognostic support tool for timely clinical attention.
+
 - **Features**: 15 clinical and laboratory features
 - **Model File**: `Hepatitis_B.pkl`
 - **Endpoint**: `/predict/hepatitis_b`

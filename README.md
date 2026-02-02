@@ -1,6 +1,6 @@
 # MultiDx Clinical AI - Multi-Disease Clinical AI Prediction System
 
-#Research/Thesis Project Notice: MultiDx is a research and thesis-driven clinical AI prototype intended for educational and investigational use. It is not a certified medical device and must not be used for real-world diagnosis or treatment decisions. Always consult licensed healthcare professionals.
+> **Research/Thesis Project Notice:** MultiDx is a research and thesis-driven clinical AI prototype intended for educational and investigational use. It is **not** a certified medical device and must **not** be used for real-world diagnosis or treatment decisions. Always consult licensed healthcare professionals.
 
 A comprehensive full-stack web application for predicting multiple medical conditions using machine learning. This system provides early risk assessment for **Ovarian Cancer**, **PCOS (Polycystic Ovary Syndrome)**, and **Hepatitis B**, helping healthcare professionals make informed decisions with explainable AI insights.
 
